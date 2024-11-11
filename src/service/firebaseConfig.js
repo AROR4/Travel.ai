@@ -6,16 +6,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDcDkGg8wH4ehYo3da8qUCjupMwftOTpSI",
-//   authDomain: "wildlifesurveillance-8ea80.firebaseapp.com",
-//   databaseURL: "https://wildlifesurveillance-8ea80-default-rtdb.firebaseio.com",
-//   projectId: "wildlifesurveillance-8ea80",
-//   storageBucket: "wildlifesurveillance-8ea80.appspot.com",
-//   messagingSenderId: "582982353984",
-//   appId: "1:582982353984:web:9c59042d7dbb8614f9cba5",
-//   measurementId: "G-S29SK2M5XE"
-// };
+
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -28,7 +19,7 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-// const firebaseConfig=VITE_FIREBASE_CONFIG;
+
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
