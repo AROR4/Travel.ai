@@ -9,6 +9,8 @@ import { Toaster } from './components/ui/sonner.jsx'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import ViewTrip from './view-trip/[tripId]/index.jsx'
 import MyTrips from './my-trips/index.jsx'
+import ChatBot from './chatbot.jsx'
+
 
 
 const router = createBrowserRouter([
@@ -35,6 +37,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Header/>
       <Toaster />
       <RouterProvider router={router}/>
+      <ChatBot/>
     </GoogleOAuthProvider>
   </React.StrictMode> ,
 )

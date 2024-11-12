@@ -105,15 +105,15 @@ function CreateTrip() {
       <div className="mt-20 flex flex-col gap-10 ">
        <div className="mb-5">
         <label className="text-xl mb-3 font-medium">What is destination of choice?</label>
-          {/* <GooglePlacesAutocomplete
+          <GooglePlacesAutocomplete
           apiKey={import.meta.env.VITE_GOOGLE_PLACES_API_KEY}
           selectProps={{
             place,
             onChange:(v)=>{setPlace(v); handleInputChange('location',v.label)}
           }}
-        /> */}
-        <Input placeholder={'ex.New Delhi,India'} type='text' 
-          onChange={(v)=>{setPlace(v);  handleInputChange('location',v.target.value);}}/>
+        />
+        {/* <Input placeholder={'ex.New Delhi,India'} type='text' 
+          onChange={(v)=>{setPlace(v);  handleInputChange('location',v.target.value);}}/> */}
        </div>
 
         <div className="mb-5">
