@@ -10,6 +10,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google'
 import ViewTrip from './view-trip/[tripId]/index.jsx'
 import MyTrips from './my-trips/index.jsx'
 import ChatBot from './chatbot.jsx'
+import Footer from './view-trip/components/Footer.jsx'
 
 
 
@@ -38,6 +39,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Toaster />
       <RouterProvider router={router}/>
       <ChatBot/>
+      <Footer/> 
     </GoogleOAuthProvider>
   </React.StrictMode> ,
 )

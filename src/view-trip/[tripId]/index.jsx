@@ -31,7 +31,6 @@ function ViewTrip() {
         <InfoSection trip={trip}/>
         <Hotels trip={trip}/>
         <TripPlace trip={trip}/>
-        <Footer trip={trip}/>
     </div>
   )
 }
